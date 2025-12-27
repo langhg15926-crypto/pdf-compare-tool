@@ -180,7 +180,7 @@ if file1 and file2:
             st.markdown("---")
             for page_num, img in results:
                 st.write(f"### 第 {page_num} 页发现变动：")
-                st.image(img, width="stretch"
+                st.image(img, width="stretch")
                 st.divider()
 
         except Exception as e:
@@ -189,5 +189,6 @@ if file1 and file2:
         if os.path.exists("temp_v1.pdf"): os.remove("temp_v1.pdf")
 
         if os.path.exists("temp_v2.pdf"): os.remove("temp_v2.pdf")
+
 
 
