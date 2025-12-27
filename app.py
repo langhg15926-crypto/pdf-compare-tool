@@ -137,7 +137,7 @@ with col2:
     file2 = st.file_uploader("📂 扫描件/修改稿 PDF", type=["pdf"])
 
 if file1 and file2:
-    if st.button("🚀 开始文字比对", type="primary", width="stretch":
+    if st.button("🚀 开始文字比对", type="primary", width="stretch"):
         
         with open("temp_v1.pdf", "wb") as f: f.write(file1.getbuffer())
         with open("temp_v2.pdf", "wb") as f: f.write(file2.getbuffer())
@@ -189,4 +189,5 @@ if file1 and file2:
         if os.path.exists("temp_v1.pdf"): os.remove("temp_v1.pdf")
 
         if os.path.exists("temp_v2.pdf"): os.remove("temp_v2.pdf")
+
 
