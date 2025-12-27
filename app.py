@@ -8,9 +8,9 @@ from pdf2image import convert_from_path
 from PIL import Image
 
 # === 页面配置 ===
-st.set_page_config(page_title="Nanobanana 文字校对专版", layout="wide")
+st.set_page_config(page_title="PDF比对", layout="wide")
 
-st.title("🍌 Nanobanana 文字校对专版")
+st.title("PDF比对")
 st.markdown("### 🔍 核心功能：忽略背景，只看文字")
 st.markdown("---")
 
@@ -187,4 +187,5 @@ if file1 and file2:
             st.error(f"发生错误: {e}")
         
         if os.path.exists("temp_v1.pdf"): os.remove("temp_v1.pdf")
+
         if os.path.exists("temp_v2.pdf"): os.remove("temp_v2.pdf")
